@@ -1,4 +1,4 @@
-resoruce "aws_ecr_repository" "this" {
+resource "aws_ecr_repository" "this" {
   name = var.name
 
   tags = {
