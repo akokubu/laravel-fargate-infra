@@ -56,7 +56,7 @@ resource "aws_ecs_task_definition" "this" {
           }
         ]
 
-        logConfigure = {
+        logConfiguration = {
           logDriver = "awslogs"
           options = {
             awslogs-group         = "/ecs/${local.name_prefix}-${(local.service_name)}/nginx"
@@ -86,7 +86,7 @@ resource "aws_ecs_task_definition" "this" {
           }
         ]
 
-        logConfigure = {
+        logConfiguration = {
           logDriver = "awslogs"
           options = {
             awslogs-group         = "/ecs/${local.name_prefix}-${(local.service_name)}/php"
